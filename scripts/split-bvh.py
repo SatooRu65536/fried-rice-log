@@ -43,7 +43,7 @@ for bvh_file in bvh_files:
         output_file = f"{label_index}_{label}-{label_count}.csv"
 
         if not path.exists(output_dir):
-            print(f"Creating directory: {output_dir}")
             makedirs(output_dir)
 
+        print(f'exporting {output_file}')
         group.to_csv(path.join(output_dir, output_file), index=False)
