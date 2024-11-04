@@ -20,7 +20,6 @@ def remove_output_dir():
 
 
 def load_labels(label_define_file: str) -> list[str]:
-    label_define_file = glob(f"{dir}/*.jsonc")[0]
     with open(label_define_file) as f:
         text = f.read()
         re_text = re.sub(r"/\*[\s\S]*?\*/|//[^\"\]\,\[]*\n", "\n", text)
