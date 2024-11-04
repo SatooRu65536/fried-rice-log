@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "*/label.jsonc"
+            ],
+            "url": "./.vscode/schema.json"
+        }
+    ]
+}
